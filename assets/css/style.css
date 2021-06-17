@@ -52,3 +52,12 @@ h1 {
     display: inline-block;
     font-size: 200%;
 }
+
+/* Memory Card Game Styling */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 800px;
+}
