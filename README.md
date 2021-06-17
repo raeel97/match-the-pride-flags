@@ -1,6 +1,6 @@
-# Life in Mzansi
+# 🏳️‍🌈Raise your flag🏳️‍🌈
 
-<img src="assets/images/logo.png" alt="website logo" width="50%" height="50%">
+
 
 ## Tabel of contents
 - <a href="#overview1">Overvew</a>
@@ -25,17 +25,17 @@
 
 <h3 id="overview2"> What is this website for?</h3>
 
-Life in Mzansi is a website that aims to provide information about life in South Africa. This site will be targeted towards anyone with an interest in learning about South Africa, its geography, cultures, wildlife and history. This websites target audience is for anyone interested in learning more about South Africa. 
+Raise your flag is a website that aims to explore different pride flags and their meanings. This site will be targeted towards anyone who is eager to learn about the different pride flags.
 
 ![Wesbite screenshots](assets/images/responsive-screenshot.JPG )
 
 <h3 id="overview3"> What does it do?</h3>
 
-Life in Mzansi has several pages of information that briefly outline what life in South Africa is like (there are also links to external websites that can help expand on certain topics.) This is achieved by focusing on the four main pillars of life in South Africa, namely Culture, Wildlife, History and Geography. Users will have a decent knowledge of South Africa by the time they are done with the website. 
+Raise your flag has an informational page that displays all the current pride flags, each image is clickable and will display a widget of information relating to the pride flag when clicked. There is also a interactive memory tile game. 
 
 <h3 id="overview4">How does it work?</h3>
 
-Life in Mzansi was created with HTML5 and styled with CSS3. There are 5 pages in total that are navigated using the menu located at the top of the website beneath the website logo. This project was developed on Gitpod and deployed on Github. The site can be viewed [here](https://raeel97.github.io/life-in-mzansi/). <br>
+Raise your flag was created with HTML5, Javascript and styled with CSS3. There are 3 pages in total that are navigated using the menu located at the top of the website on the right side of the viewport. The tiles were created using HTML and CSS and the memory tile game was built using a combination of all three of the previously mentioned technologies. This project was developed on Gitpod and deployed on Github. The site can be viewed [here](https://raeel97.github.io/life-in-mzansi/). <br>
 The wireframes can be viewed [here](https://drive.google.com/drive/folders/10ZFwIOE_hdAEvLItfB3IiwfM7PaafriX?usp=sharing).
 
 
@@ -45,39 +45,16 @@ The wireframes can be viewed [here](https://drive.google.com/drive/folders/10ZFw
 <h3 id="features2">Existing Features</h3>
 
 <ol>
-<li>A stylish front page with a hero image and short introduction that explains the purpose of the website and the reason behind its naming.</li>
-<li>A logo that links to the home page. The logo incorporates the South African flag.</li>
-<li>The website incorporate the colors of the South African flag to add to the user experience, this can be seen in the following:
-<ul>
-<li>The headings of each page</li>
-<li>The buttons of the menu</li>
-<li>The borders around each image</li>
-<li>The external links in the footer.</li>
-</ul></li>
-<li>
-The body of the website is black and each page is styled to represent one of the 5 other colors present in the South African flag. 
-<ul>
-<li>The home page is white</li>
-<li>The geography page is green</li>
-<li>The culture page is red</li>
-<li>The wildlife page is yellow</li>
-<li>The history page is blue</li>
-</ul>
-</li>
-<li>A page dedicated to South African <a href="https://raeel97.github.io/life-in-mzansi/geography.html">geography</a>.</li>
-<li>A page dedicated to South African <a href="https://raeel97.github.io/life-in-mzansi/culture.html">culture</a>.</li>
-<li>A page dedicated to South African <a href="https://raeel97.github.io/life-in-mzansi/wildlife.html">wildlife</a>.</li>
-<li>A page dedicated to South African <a href="https://raeel97.github.io/life-in-mzansi/history.html">history</a>.</li>
-<li>A horizontally centered menu is used to navigate the website. Each menu buttons colors invert when selected.</li>
-<li>A footer with links to the South African Tourism's facebook, twitter, instagram and youtube pages. The links have been styled to appear as the external websites logos and keeping with the theme, the south african flag colors were used. There is also a link to the developers github profile.</li> 
+<li>A pride themed front page that ties in with the theme of the website</li>
+<li>A logo that links to the home page. The logo displays pride flags on either side of the text</li>
+<li>A horizontally centered menu is used to navigate the website and a hamburger drop menu is avaidable on mobile and tablet. Each menu button underlines when selected.</li>
+<li>There is a link to the developers github profile.</li> 
 </ol>
 <br>
 <h3 id="features3">Features Left to Implement</h3>
 <ul>
-<li>The wildlife page will be split into 2 further pages, mainly a flora and fauna page. </li>
-<li>A contact form will be later added so that users can submit feedback and get into contact with the developer.</li>
-<li>An interactive map of South Africa will be added below the hero image that links to pages about each province.</li>
-<li>The hero image will be replaced with a carousel gallery. </li>
+<li>A quiz game will later be added to test the users knowledge on the various pride flags </li>
+<li>A feedback and contact form will be added so that users are able to input suggestions</li>
 </ul>
 <br>
 <h2 id="tech">Technologies Used</h2>
@@ -85,6 +62,7 @@ The body of the website is black and each page is styled to represent one of the
 <ul>
 <li>HTML</li>
 <li>CSS</li>
+<li>Javascript</li>
 </ul>
 
 
@@ -96,8 +74,8 @@ The body of the website is black and each page is styled to represent one of the
 <li><a href="https://www.gitpod.io/" target="_blank">GitPod</a> - used to develop project and organise version control.</li>
 <li><a href="https://pages.github.com/" target="_blank">GitHub Pages</a> - used to deploy the site.</li>
 <li><a href="https://developers.google.com/web/tools/lighthouse" target="_blank">Lighthouse</a> - for performance review.</li>
-<li><a href="https://www.canva.com/" target="_blank">Canva</a> - for logo and hero image design</li>
-<li><a href="https://balsamiq.com//" target="_blank">Balsamiq</a> - used to create wireframes</li>
+
+<li><a href="https://www.canva.com/" target="_blank">Canva</a> - used to create wireframes and design image elements</li>
 </ul>
 
 
