@@ -24,7 +24,7 @@ time, mark, audio, video {
 
 
 body {
-    background-image: url(/assets/images/main-background.jpg);
+    background-image: url(./assets/images/main-background.jpg);
     background-size: 100% ;    
 }
 
