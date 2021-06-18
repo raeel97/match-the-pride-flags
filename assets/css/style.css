@@ -22,16 +22,20 @@ time, mark, audio, video {
 
 
 
-
+/*Background styling */
 body {
-    background-image: url(./assets/images/main-background.jpg);
+    background-image: url(../images/main-background.jpg);
     background-size: 100% ;    
+}
+#heading-container {
+    display: inline-block;
 }
 
 #page-container {
     background-color: rgba(225, 225, 225, 0.650);
     height: 100vh;
     width: 100vw;
+    
     
 }
 
@@ -42,16 +46,28 @@ h1 {
     font-weight: 600;
 }
 
-#menu-container ul {
+#menu-container {
+    display: inline-block;
     float: right;
-    padding-right: 5%;
-    padding-top: 2%;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+
+#menu-container ul {
+    
 }
 
 #menu-container ul li{
     display: inline-block;
     font-size: 200%;
+    
 }
+
+#menu-container a{
+    text-decoration: none;
+    
+}
+
 
 /* Memory Card Game Styling */
 
@@ -60,4 +76,34 @@ h1 {
     flex-wrap: wrap;
     height: 600px;
     width: 800px;
+}
+
+.grid img {
+    border: black 1px solid;
+    max-width: 50%;
+    max-height: 50%;
+
+}
+
+/*Flag container styling*/
+
+#flag-container {
+    background-color: black;
+    width: 100vw;
+    height: 70vh;
+}
+
+#flag-container h2,p {
+    color: chartreuse;
+}
+
+/* Flags styling*/
+
+.tiles {
+    width: 8vw;
+    height: 6vw;
+    background-color: chartreuse;
+    display: inline-block;
+    margin-left: 10vw;
+    margin-top: 10vw;
 }
