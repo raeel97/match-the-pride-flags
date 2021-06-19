@@ -14,7 +14,7 @@ const cardList = [
     { name: 'trans-flag', img: '../images/trans-flag.png' },
     { name: 'trans-flag', img: '../images/trans-flag.png' },
 ]
-
+cardList.sort(() =>0.5 - Math.random())
 const grid = document.querySelector(".grid")
 const resultDisplay = document.querySelector('#result')
 var cardsChosen = []
@@ -24,9 +24,10 @@ var cardsWon = []
 // Create card layout 
 function createBoard(){
     for (let i = 0; i < cardList.length; i++) {
-        var card = document.createElement('img')
+        const card = document.createElement('img')
         card.setAttribute('src', './assets/images/blank.png')
         card.setAttribute('data-id', i)
+        card.addEventListener('click', flipCard)
         grid.appendChild(card)
     }
 }
@@ -47,7 +48,10 @@ function checkForMatch(){
     } 
     cardsChosen = []
     cardsChosenId = []
-    resultDisplay
+    resultDisplay.textContent = cardsWon.length
+    if (cardsWon.length === cardList.length/2){
+        resultDisplay.textContent = 'Congratulations, you found them all!'
+    }
 }
 // Create flip function to flip cards
 function flipCard(){
