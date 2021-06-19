@@ -40,11 +40,12 @@ function checkForMatch(){
         cards[optionOneId].setAttribute('src','./assets/images/blank.png')
         cards[optionTwoId].setAttribute('src','./assets/images/blank.png')
         alert('You have clicked the same image')
-    } 
-    else if (cardsChosenId[0] === cardsChosenId[1]){
+    } else if (cardsChosen[0] === cardsChosen[1]){
         alert('You found a match')
         cards[OptionOneId].setAttribute('src', './assets/images/matched.png')
         cards[OptionTwoId].setAttribute('src', './assets/images/matched.png')
+        cards[optionOneId].removeEventListener('click', flipCard)
+        cards[optionTwoId].removeEventListener('click', flipCard)
         cardsWon.push(cardsChosen)
     } else {
         cards[OptionOneId].setAttribute('src', './assets/images/blank.png')
@@ -73,3 +74,4 @@ function flipCard(){
 createBoard()
 })
 
+let hamburger = document.getElementById('hamburger').addEventListener('click')
