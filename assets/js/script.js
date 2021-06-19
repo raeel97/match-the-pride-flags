@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 const cardList = [
-    { name: 'pride-flag', img: '../images/pride-flag.png' }, 
-    { name: 'pride-flag', img: '../images/pride-flag.png' }, 
-    { name: 'bi-flag', img: '../images/bi-flag.png' }, 
-    { name: 'bi-flag', img: '../images/bi-flag.png' }, 
-    { name: 'intersex-flag', img: '../images/intersex-flag.png' },
-    { name: 'intersex-flag', img: '../images/intersex-flag.png' },
-    { name: 'asexual-flag', img: '../images/asexual-flag.png' }, 
-    { name: 'asexual-flag', img: '../images/asexual-flag.png' }, 
-    { name: 'pansexual-flag', img: '../images/pansexual-flag.png' },
-    { name: 'pansexual-flag', img: '../images/pansexual-flag.png' },  
-    { name: 'trans-flag', img: '../images/trans-flag.png' },
-    { name: 'trans-flag', img: '../images/trans-flag.png' },
+    { name: 'pride-flag', img: './assets/images/pride-flag.png' }, 
+    { name: 'pride-flag', img: './assets/images/pride-flag.png' }, 
+    { name: 'bi-flag', img: './assets/images/bi-flag.png' }, 
+    { name: 'bi-flag', img: './assets/images/bi-flag.png' }, 
+    { name: 'intersex-flag', img: './assets/images/intersex-flag.png' },
+    { name: 'intersex-flag', img: './assets/images/intersex-flag.png' },
+    { name: 'asexual-flag', img: './assets/images/asexual-flag.png' }, 
+    { name: 'asexual-flag', img: './assets/images/asexual-flag.png' }, 
+    { name: 'pansexual-flag', img: './assets/images/pansexual-flag.png' },
+    { name: 'pansexual-flag', img: './assets/images/pansexual-flag.png' },  
+    { name: 'trans-flag', img: './assets/images/trans-flag.png' },
+    { name: 'trans-flag', img: './assets/images/trans-flag.png' },
 ]
 cardList.sort(() =>0.5 - Math.random())
 const grid = document.querySelector(".grid")
@@ -33,10 +33,15 @@ function createBoard(){
 }
 // Check cards for matches
 function checkForMatch(){
-    var cards = document.querySelectorAll('img')
+    const cards = document.querySelectorAll('img')
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
-    if (cardsChosenId[0] === cardsChosenId[1]){
+    if (optionOneId == optionTwoId){
+        cards[optionOneId].setAttribute('src','./assets/images/blank.png')
+        cards[optionTwoId].setAttribute('src','./assets/images/blank.png')
+        alert('You have clicked the same image')
+    } 
+    else if (cardsChosenId[0] === cardsChosenId[1]){
         alert('You found a match')
         cards[OptionOneId].setAttribute('src', './assets/images/matched.png')
         cards[OptionTwoId].setAttribute('src', './assets/images/matched.png')
@@ -55,7 +60,7 @@ function checkForMatch(){
 }
 // Create flip function to flip cards
 function flipCard(){
-    var cardId = this.getAttribute('data-id')
+    let cardId = this.getAttribute('data-id')
     cardsChosen.push(cardList[cardId].name)
     cardsChosenId.push(cardId)
     this.setAttribute('src', cardList[cardId].img)
