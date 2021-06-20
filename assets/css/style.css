@@ -31,6 +31,11 @@ body {
     display: inline-block;
 }
 
+#menu-container a {
+    text-decoration: none;
+    color: black;
+}
+
 #page-container {
     background-color: rgba(225, 225, 225, 0.650);
     height: 100vh;
@@ -94,24 +99,82 @@ h1 {
     margin-top: 10vw;
 }
 
+/*Footer styling*/
+footer a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    position: relative;
+    top: 1.5em;
+    left: 22em;
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
     #heading-container h1 {
-        font-size: 200%;
-    }
-
-    #menu-container ul li {
-        font-size: 150%;
-    }
-  }
-
-@media only screen and (max-width: 500px) {
-    #heading-container h1 {
-        font-size: 150%;
+        font-size: 50%;
     }
 
     #menu-container ul li {
         font-size: 100%;
     }
+    .grid {
+        height: 24em;
+        width: 20em;
+        margin-left: 3em;
+    }
+    .grid img {
+        width: 6em;
+        height: 6em;
+    }
+
+    #flag-container {
+        width: 90vw;
+    }
   }
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-size: unset;
+    }
+    footer a {
+        position: relative;
+        top: 1.5em;
+        left: 22em;
+    }
+    #header {
+        margin-bottom: 0.5em;
+    }
+    #heading-container h1 {
+        font-size: 300%;
+        
+    }
+
+    #menu-container ul li {
+        font-size: 150%;
+    }
+
+    .grid {
+        height: 21em;
+        width: 32em;
+        margin-left: 9em;
+        padding-top: 7em;
+    }
+    .grid img {
+        width: 10em;
+        height: 10em;
+    }
+    #flag-container {
+        width: 100vw;
+        height: 84vh;
+    }
+    #menu-container {
+        position: relative;
+        left: 95px;
+        float: none;
+    }
+    
+  }
+
+
+
 
