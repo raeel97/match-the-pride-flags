@@ -24,7 +24,7 @@ time, mark, audio, video {
 
 /*Background styling */
 body {
-    background-image: url(../images/main-background.jpg);
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);;
     background-size: 100% ;    
 }
 #heading-container {
@@ -34,6 +34,9 @@ body {
 #menu-container a {
     text-decoration: none;
     color: black;
+    font-size: 200%;
+    padding-right: 30px;
+    
 }
 
 #page-container {
@@ -46,7 +49,6 @@ body {
 
 h1 {
     font-size: 300%;
-    
     padding-top: 5%;
     font-weight: 600;
 }
@@ -58,21 +60,37 @@ h1 {
 #menu-container {
     display: inline-block;
     float: right;
+    left: 730px;
+    top: 45px;
+    position: relative;
 }
-
+/* Memory Game Title Styling */
+.rainbow {
+    background-image: linear-gradient(to left, rgb(255, 83, 255), rgb(132, 0, 226), rgb(37, 37, 247), rgb(8, 240, 8), yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 550px;
+    margin-right: 520px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 /* Memory Card Game Styling */
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
-    width: 800px;
+    height: 360px;
+    width: 490px;
+    margin-left: 33em;
+    padding-top: 3em;
+    
 }
 
 .grid img {
     border: black 1px solid;
-    max-width: 50%;
-    max-height: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
 
 }
 
@@ -81,7 +99,7 @@ h1 {
 #flag-container {
     background-color: black;
     width: 100vw;
-    height: 70vh;
+    height: 81vh;
 }
 
 #flag-container h2,p {
@@ -106,7 +124,7 @@ footer a {
     text-decoration: none;
     position: relative;
     top: 1.5em;
-    left: 22em;
+    left: 45em;
 }
 
 @media only screen and (max-width: 425px) {
@@ -154,14 +172,14 @@ footer a {
     }
 
     .grid {
-        height: 21em;
-        width: 32em;
-        margin-left: 9em;
-        padding-top: 7em;
+        height: 20em;
+        width: 16em;
+        margin-left: 17em;
+        padding-top: 8em;
     }
     .grid img {
-        width: 10em;
-        height: 10em;
+        width: 5em;
+        height: 5em;
     }
     #flag-container {
         width: 100vw;
@@ -174,6 +192,32 @@ footer a {
     }
     
   }
+
+  @media only screen and (max-width: 1280px) {
+    .rainbow {
+        
+        margin-left: 410px;
+        margin-right: 400px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .grid {
+        margin-left: 25em;
+
+    }
+
+    footer a {
+        left: 37em;
+    }
+
+    #menu-container {
+        left: 450px;
+       
+    }
+    
+    
+  }
+
 
 
 
