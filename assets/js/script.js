@@ -70,12 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('img')
             card.setAttribute('src', './assets/images/blank.png')
             card.setAttribute('class', 'card')
-            card.setAttribute('onClick', 'wiggleCard()')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     }
+    
+    function wiggleCard(){
+        document.getElementsByClassName("card").classList.add("wiggle"); 
+        document.getElementsByClassName("card").classList.remove("wiggle"); 
+    }
+
+  
 
     // Check cards for matches. This is done by creating a function called checkForMatch. 
     function checkForMatch() {
@@ -89,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (optionOneId == optionTwoId) {
             cards[optionOneId].setAttribute('src', './assets/images/blank.png')
             cards[optionTwoId].setAttribute('src', './assets/images/blank.png')
-            alert('You have clicked the same image gurl!')
+            wiggleCard()
         } //if the if part of the if else statement is false, the next part the code run is the else if which checks to see if the tiles have the same value (name)
         // if its true, an alert is sent to the browser informing the user that they have a matching pair and both cardsChosen[0] and CardsChosen[1] have their src 
         // attribute reassigned to a matched image. It then removes the event listener thats waiting for the user to click on the tile so it can call the flip function. 
@@ -133,7 +139,5 @@ document.addEventListener('DOMContentLoaded', () => {
     createBoard() // Calling the createBoard function
     
 
-    function wiggleCard(){
-        document.getElementsByClassName("card").classList.add("wiggle"); 
-    }
+    
 })

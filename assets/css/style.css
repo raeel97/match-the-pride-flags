@@ -195,7 +195,7 @@ footer a {
 
   @media only screen and (max-width: 1280px) {
     .rainbow {
-        
+        font-size: xx-large;
         margin-left: 410px;
         margin-right: 400px;
         padding-top: 1em;
@@ -216,9 +216,27 @@ footer a {
     }
     
     
-  }
+    .wiggle {
+        animation: wiggler .8s ease-in;
+    }
 
-
-
-
-
+    @keyframes wiggler {
+        0%{
+            transform: translate(0)
+        }
+        20%,
+        40%,
+        60%,
+        80%{
+            transform: translate(0.8em)
+        }
+        10%,
+        30%,
+        50% {
+            transform: translate(-.2em)
+        }
+        70%,
+        100% {
+            transform: translate(0)
+        }
+    }
