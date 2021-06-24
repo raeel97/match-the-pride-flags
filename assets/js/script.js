@@ -69,7 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < cardList.length; i++) {
             const card = document.createElement('img')
             card.setAttribute('src', './assets/images/blank.png')
-            card.setAttribute('id', 'card')
+            card.setAttribute('class', 'card')
+            card.setAttribute('onClick', 'wiggleCard()')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -130,4 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     createBoard() // Calling the createBoard function
+    
+
+    function wiggleCard(){
+        document.getElementsByClassName("card").classList.add("wiggle"); 
+    }
 })
