@@ -75,17 +75,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
+    var wiggleWarning = document.getElementById('game-warning');
 
-    function wiggleCard(wiggleTwo, mismatch){
+    function wiggleCard(wiggleTwo){
         wiggleTwo.classList.add("wiggle"); 
         setTimeout(function(){wiggleTwo.classList.remove("wiggle");}, 2000);
-        let wiggleWarning = document.getElementById('game-warning');
-        wiggleWarning.innerHTML = "You can't click on the same tile twice!"
+        
+        wiggleWarning.innerHTML = "You can't click on the same tile twice doll!"
         setTimeout(function(){wiggleWarning.innerHTML = "";}, 2000);
     }
 
-    
+    function matchFound(matchAlert){
+        wiggleWarning.innerHTML = "You found a match! Shantay you stay!";
+        setTimeout(function(){wiggleWarning.innerHTML = "";}, 2000);
+    }
 
+    function mismatch(mismatchAlert){
+        wiggleWarning.innerHTML = "A queen never gives up, try again!";
+        setTimeout(function(){wiggleWarning.innerHTML = "";}, 2000);
+    }
 
 
   
@@ -102,31 +110,32 @@ document.addEventListener('DOMContentLoaded', () => {
         if (optionOneId == optionTwoId) {
             cards[optionOneId].setAttribute('src', './assets/images/blank.png')
             cards[optionTwoId].setAttribute('src', './assets/images/blank.png')
-            let wiggleTwo = cards[optionTwoId]
+            let wiggleTwo = cards[optionTwoId];
             wiggleCard(wiggleTwo)
-            wiggleMessage(wiggleTwo)
         } //if the if part of the if else statement is false, the next part the code run is the else if which checks to see if the tiles have the same value (name)
         // if its true, an alert is sent to the browser informing the user that they have a matching pair and both cardsChosen[0] and CardsChosen[1] have their src 
         // attribute reassigned to a matched image. It then removes the event listener thats waiting for the user to click on the tile so it can call the flip function. 
         // This prevents the user from selecting matched cards. The names in the cardsChosen array are then pished into the cardsWon array. 
         else if (cardsChosen[0] === cardsChosen[1]) {
-            alert('You found a match, shantay you stay!')
             cards[optionOneId].setAttribute('src', './assets/images/matched.png')
             cards[optionTwoId].setAttribute('src', './assets/images/matched.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
             cardsWon.push(cardsChosen)
+            let matchAlert = cards[optionTwoId];
+            matchFound(matchAlert)
         } else { // If the if and else if are false, the else part of the statmenet will run signally that there is a mismatch in the selected tiles. This will result 
             //if its true, the card is 'flipped' back over by reassigning it a blank image again and alerting the user of the mismatch. 
             cards[optionOneId].setAttribute('src', './assets/images/blank.png')
             cards[optionTwoId].setAttribute('src', './assets/images/blank.png')
-            alert('Mismatch, sashay away!')
+            let mismatchAlert = cards[optionTwoId];
+            mismatch(mismatchAlert)
         }
         cardsChosen = [] // A variable of cardsChosen is assigned the value of an empty array
         cardsChosenId = [] // A variable of cardsChosenId is assigned the value of an empty array
         resultDisplay.textContent = cardsWon.length
         if (cardsWon.length === cardList.length/2) {
-            resultDisplay.textContent = 'Congratulations, you found them all!' 
+            alert('Congratulations, you found them all!')
         }
     }
     // Create flip function to flip cards. This is done by assigning a variable of cardId with a value of the data-id attribute in the window
@@ -140,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId.push(cardId)
         this.setAttribute('src', cardList[cardId].img)
         if (cardsChosen.length ===2) {
-            setTimeout(checkForMatch, 500)
+            setTimeout(checkForMatch, 250)
         }
     }
 
