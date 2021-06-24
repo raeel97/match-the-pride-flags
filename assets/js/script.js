@@ -69,17 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < cardList.length; i++) {
             const card = document.createElement('img')
             card.setAttribute('src', './assets/images/blank.png')
-            card.setAttribute('class', 'card')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     }
     
-    function wiggleCard(){
-        document.getElementsByClassName("card").classList.add("wiggle"); 
-        document.getElementsByClassName("card").classList.remove("wiggle"); 
+    function wiggleCard(wiggleTwo){
+        wiggleTwo.classList.add("wiggle"); 
+        setTimeout(function(){wiggleTwo.classList.remove("wiggle");}, 2000);
     }
+
+
 
   
 
@@ -95,7 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (optionOneId == optionTwoId) {
             cards[optionOneId].setAttribute('src', './assets/images/blank.png')
             cards[optionTwoId].setAttribute('src', './assets/images/blank.png')
-            wiggleCard()
+            let wiggleTwo = cards[optionTwoId]
+            wiggleCard(wiggleTwo)
         } //if the if part of the if else statement is false, the next part the code run is the else if which checks to see if the tiles have the same value (name)
         // if its true, an alert is sent to the browser informing the user that they have a matching pair and both cardsChosen[0] and CardsChosen[1] have their src 
         // attribute reassigned to a matched image. It then removes the event listener thats waiting for the user to click on the tile so it can call the flip function. 
