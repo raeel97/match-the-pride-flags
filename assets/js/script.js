@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < cardList.length; i++) {
             const card = document.createElement('img')
             card.setAttribute('src', './assets/images/blank.png')
+            card.setAttribute('id', 'card')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
