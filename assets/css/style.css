@@ -24,8 +24,9 @@ time, mark, audio, video {
 
 /*Background styling */
 body {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);;
-    background-size: 100% ;    
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    width: 150vw;
+    background-repeat: no-repeat;
 }
 #heading-container {
     display: inline-block;
@@ -127,30 +128,30 @@ footer a {
     left: 45em;
 }
 
-@media only screen and (max-width: 425px) {
-    #heading-container h1 {
-        font-size: 50%;
-    }
-
-    #menu-container ul li {
-        font-size: 100%;
+  @media only screen and (max-width: 1280px) {
+    .rainbow {
+        font-size: xx-large;
+        margin-left: 410px;
+        margin-right: 400px;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     .grid {
-        height: 24em;
-        width: 20em;
-        margin-left: 3em;
-    }
-    .grid img {
-        width: 6em;
-        height: 6em;
+        margin-left: 25em;
+
     }
 
-    #flag-container {
-        width: 90vw;
+    footer a {
+        left: 37em;
     }
-  }
 
-@media only screen and (max-width: 800px) {
+    #menu-container {
+        left: 450px;
+       
+    }
+}
+
+@media only screen and (max-width: 768px) {
     body {
         background-size: unset;
     }
@@ -192,51 +193,67 @@ footer a {
     }
     
   }
-
-  @media only screen and (max-width: 1280px) {
-    .rainbow {
-        font-size: xx-large;
-        margin-left: 410px;
-        margin-right: 400px;
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-    .grid {
-        margin-left: 25em;
-
-    }
-
-    footer a {
-        left: 37em;
+  @media only screen and (max-width: 480px) {
+    #heading-container h1 {
+        font-size: 200%;
     }
 
     #menu-container {
-        left: 450px;
-       
-    }
-    
-    
-    .wiggle {
-        animation: wiggler .8s ease-in;
+        display: inline-block;
+        float: none;
+        top: 0px;
+        left: 0px;
+
     }
 
-    @keyframes wiggler {
-        0%{
-            transform: translate(0)
-        }
-        20%,
-        40%,
-        60%,
-        80%{
-            transform: translate(0.8em)
-        }
-        10%,
-        30%,
-        50% {
-            transform: translate(-.2em)
-        }
-        70%,
-        100% {
-            transform: translate(0)
-        }
+    #menu-container a {
+        text-decoration: none;
+        color: black;
+        font-size: 120%;
+    }
+    
+    .grid {
+        height: 24em;
+        width: 20em;
+        margin-left: 4em;
+        margin-top: -10em;
+    }
+    .grid img {
+        width: 6em;
+        height: 6em;
+    }
+
+    #flag-container {
+        width: 100vw;
+    }
+
+    footer a {
+        position: relative;
+        top: 0.5em;
+        left: 5em;
+    }
+  }
+
+.wiggle {
+    animation: wiggler 1.0s;
+}
+
+@keyframes wiggler {
+    0%{
+        transform: translate(0)
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translate(1.8em)
+    }
+    10%,
+    30%,
+    50% {
+        transform: translate(-.4em)
+    }
+    70%,
+    100% {
+        transform: translate(0)
     }
