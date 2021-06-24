@@ -83,7 +83,7 @@ h1 {
     height: 360px;
     width: 490px;
     margin-left: 33em;
-    padding-top: 3em;
+    
     
 }
 
@@ -93,6 +93,15 @@ h1 {
     height: 120px;
     border-radius: 10%;
 
+}
+
+#game-warning {
+    padding-top: 2em;
+    margin-left: 650px;
+    margin-right: 400px;
+    background-image: linear-gradient(to left, rgb(255, 83, 255), rgb(132, 0, 226), rgb(37, 37, 247), rgb(8, 240, 8), yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*Flag container styling*/

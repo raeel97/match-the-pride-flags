@@ -75,10 +75,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    function wiggleCard(wiggleTwo){
+
+    function wiggleCard(wiggleTwo, mismatch){
         wiggleTwo.classList.add("wiggle"); 
         setTimeout(function(){wiggleTwo.classList.remove("wiggle");}, 2000);
+        let wiggleWarning = document.getElementById('game-warning');
+        wiggleWarning.innerHTML = "You can't click on the same tile twice!"
+        setTimeout(function(){wiggleWarning.innerHTML = "";}, 2000);
     }
+
+    
 
 
 
@@ -98,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionTwoId].setAttribute('src', './assets/images/blank.png')
             let wiggleTwo = cards[optionTwoId]
             wiggleCard(wiggleTwo)
+            wiggleMessage(wiggleTwo)
         } //if the if part of the if else statement is false, the next part the code run is the else if which checks to see if the tiles have the same value (name)
         // if its true, an alert is sent to the browser informing the user that they have a matching pair and both cardsChosen[0] and CardsChosen[1] have their src 
         // attribute reassigned to a matched image. It then removes the event listener thats waiting for the user to click on the tile so it can call the flip function. 
