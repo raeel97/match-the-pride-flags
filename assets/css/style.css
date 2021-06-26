@@ -110,6 +110,14 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+#restart-container {
+    width: fit-content;
+    margin-left: 745px;
+    font-size: 50px;
+    position: relative;
+    top: 10;
+    bottom: 10px;
+}
 /*Flag container styling*/
 
 #flag-container {
