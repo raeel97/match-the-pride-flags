@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function matchFound(matchAlert){
         wiggleWarning.innerHTML = "You found a match! Shantay you stay!";
-        setTimeout(function(){wiggleWarning.innerHTML = "";}, 2000);
+        setTimeout(function(){wiggleWarning.innerHTML = "";}, 3000);
     }
 
     function mismatch(mismatchAlert){
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId.push(cardId)
         this.setAttribute('src', cardList[cardId].img)
         if (cardsChosen.length ===2) {
-            setTimeout(checkForMatch, 250)
+            setTimeout(checkForMatch, 350)
         }
     }
 
