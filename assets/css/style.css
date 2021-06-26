@@ -50,7 +50,6 @@ body {
 
 h1 {
     font-size: 300%;
-    padding-top: 5%;
     font-weight: 600;
 }
 
@@ -62,7 +61,7 @@ h1 {
     display: inline-block;
     float: right;
     left: 730px;
-    top: 45px;
+    top: 30px;
     position: relative;
 }
 /* Memory Game Title Styling */
@@ -105,12 +104,18 @@ h1 {
     font-size: 150%;
 }
 
+#restart-game {
+    background-image: linear-gradient(to left, rgb(255, 125, 255), rgb(188, 97, 253), rgb(86, 86, 255), rgb(85, 255, 85), yellow, orange, rgb(255, 68, 68));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /*Flag container styling*/
 
 #flag-container {
     background-color: black;
     width: 100vw;
-    height: 81vh;
+    height: 85vh;
 }
 
 #flag-container h2,p {
@@ -266,4 +271,4 @@ footer a {
     70%,
     100% {
         transform: translate(0)
-    }
+    }}
