@@ -51,13 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/* Create card layout by using a for loop to iterate through the cardList array and create a img element in the html
 	 with a src attribute that links to my blank tile photo and a data id attribute with a numerical value for each img element. 
-	 Then it "listens" for the click of the img and in response calls the flipCard function. The for loop then creates a child node
-	 of card for the parent node "grid".
+	 Then it "listens" for the click of the img and in response calls the flipCard function. The for loop then moves card into the child node
+	 the parent node "grid".
 	*/
 	function createBoard() {
 		for (let i = 0; i < cardList.length; i++) {
 			const card = document.createElement('img');
 			card.setAttribute('src', './assets/images/blank.png');
+			card.setAttribute('class', 'cards');
 			card.setAttribute('data-id', i);
 			card.addEventListener('click', flipCard);
 			grid.appendChild(card);
@@ -92,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}, 2000);
 	}
 
+
 	// Check cards for matches. This is done by creating a function called checkForMatch. 
 	function checkForMatch() {
 		const cards = document.querySelectorAll('img'); // A variable of cards is assigned the value of all img elements
@@ -118,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			cardsWon.push(cardsChosen);
 			let matchAlert = cards[optionTwoId];
 			matchFound(matchAlert);
+			
 		} else { // If the if and else if are false, the else part of the statemnet will run signally that there is a mismatch in the selected tiles. This will result 
 			//if its true, the card is 'flipped' back over by reassigning it a blank image again and alerting the user of the mismatch. 
 			cards[optionOneId].setAttribute('src', './assets/images/blank.png');
@@ -127,9 +130,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 		cardsChosen = []; // A variable of cardsChosen is assigned the value of an empty array
 		cardsChosenId = []; // A variable of cardsChosenId is assigned the value of an empty array
-		if(cardsWon.length === 6){
-			let vanishGrid = document.getElementsByClassName("grid");
-			vanishGrid.remove()
+		
+		if (cardsWon.length === 6){
+			alert("You found all the tiles, well done!")
+			
 		};
 	}
 	// Create flip function to flip cards. This is done by assigning a variable of cardId with a value of the data-id attribute in the window
