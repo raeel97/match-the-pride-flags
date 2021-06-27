@@ -133,7 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 		if (cardsWon.length === 6){
 			alert("You found all the tiles, well done!")
-			
+			let restart = document.getElementById('restart-game')
+			restart.setAttribute('id', 'pulse')
 		};
 	}
 	// Create flip function to flip cards. This is done by assigning a variable of cardId with a value of the data-id attribute in the window

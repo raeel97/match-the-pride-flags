@@ -283,3 +283,38 @@ footer a {
     100% {
         transform: translate(0)
     }}
+
+    #pulse {
+        animation: pulse 1s linear infinite;
+    }
+    @keyframes pulse {
+        0%{
+            opacity: 1;
+            background-image: none;
+            background-color: red;
+            color: black;
+        }
+        20% {
+            opacity: 0.0;
+            background-image: none;
+            background-color: rgb(251, 255, 0);
+            color: black;
+        }
+        50% {
+            opacity: 1;
+            background-image: none;
+            background-color: rgb(9, 255, 0);
+            color: black;
+        }
+        80% {
+            opacity: 0;
+            background-image: none;
+            background-color: rgb(0, 38, 255);
+            color: black;
+        }
+        100% {
+            opacity: 1;
+            background-image: none;
+            background-color: rgb(234, 0, 255);
+            color: black;
+        }}
