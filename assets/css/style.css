@@ -201,6 +201,10 @@ footer a {
         
     }
 
+    #heading-container {
+        display: inline;
+    }
+
     .grid {
         height: 28em;
         width: 22em;
@@ -256,18 +260,19 @@ footer a {
   }
   @media only screen and (max-width: 480px) {
     #heading-container h1 {
-        font-size: 200%;
+        font-size: 8vw;
+        text-align: center;
     }
 
     #header {
-        margin-bottom: 0.5em;
-        margin-left: 2em;
+        margin: 0 7.5vw 0 7.5vw;
+        width: 85vw;
     }
 
     #menu-container {
         display: inline-block;
         float: none;
-        left: 3.25em;
+        left: 15vw;
         top: 0px;
         position: relative;
     }
@@ -279,11 +284,11 @@ footer a {
     }
 
     .rainbow {
-        margin-left: 3.25em;
-        margin-right: 40px;
-        padding-top: 1.5em;
-        padding-bottom: 1em;
-        font-size:140%;
+        margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 6vh;
+    padding-bottom: 2vh;
+    font-size: 8vw;
         
     }
 
@@ -314,7 +319,9 @@ footer a {
 
     #game-warning {
         margin: 1em 0 0 -4em;;
-        font-size: 80%;
+        font-size: 4vw;
+        width: 100vw;
+        height: 2vh;
        
     }
 
