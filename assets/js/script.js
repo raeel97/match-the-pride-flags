@@ -42,10 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	cardList.sort(() => 0.5 - Math.random()); //Sort method is used to in conjunction with the Math.random function to shuffle the tiles
 
 	const grid = document.querySelector(".grid"); //Selects the div in the html with .grid class and assigns it to the variable grid
-	const resultDisplay = document.querySelector('#result');
 	let cardsChosen = []; // Creates a variable named cardsChosen and assigns it a value of an empty array
 	let cardsChosenId = []; // Creates a variable named cardsChosenId and assigns it a value of an empty array
 	let cardsWon = []; // Creates a variable named cardsWon and assigns it a value of an empty array
+	
+
+	
 
 	/* Create card layout by using a for loop to iterate through the cardList array and create a img element in the html
 	 with a src attribute that links to my blank tile photo and a data id attribute with a numerical value for each img element. 
@@ -125,10 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 		cardsChosen = []; // A variable of cardsChosen is assigned the value of an empty array
 		cardsChosenId = []; // A variable of cardsChosenId is assigned the value of an empty array
-		resultDisplay.textContent = cardsWon.length;
-		if (cardsWon.length === cardList.length / 2) {
-			alert('Congratulations! You found them all!');
-		}
+		if(cardsWon.length === 6){
+			let vanishGrid = document.getElementsByClassName("grid");
+			vanishGrid.remove()
+		};
 	}
 	// Create flip function to flip cards. This is done by assigning a variable of cardId with a value of the data-id attribute in the window
 	// cardId datatype value in the cardList array is then utilized as a key and pushed into the cardChosen array. The cardId value is then pushed 
