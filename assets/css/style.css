@@ -25,7 +25,7 @@ time, mark, audio, video {
 /*Background styling */
 body {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    width: 99vw;
+    width: 100vw;
     background-repeat: no-repeat;
 }
 #heading-container {
@@ -71,8 +71,9 @@ h1 {
     -webkit-text-fill-color: transparent;
     margin-left: 550px;
     margin-right: 520px;
-    padding-top: 0.25em;
+    padding-top: 3em;
     padding-bottom: 1em;
+    
 }
 /* Memory Card Game Styling */
 
@@ -156,7 +157,7 @@ footer a {
 
   @media only screen and (max-width: 1280px) {
     .rainbow {
-        font-size: xx-large;
+        
         margin-left: 410px;
         margin-right: 400px;
         padding-top: 1em;
@@ -175,47 +176,81 @@ footer a {
         left: 450px;
        
     }
+
+    #restart-container {
+        margin-left: 615px;
+    }
+
+    #game-warning {
+        margin: 1em 0 0 17em;
+       
+    }
 }
 
 @media only screen and (max-width: 768px) {
     body {
         background-size: unset;
     }
-    footer a {
-        position: relative;
-        top: 1.5em;
-        left: 22em;
-    }
     #header {
         margin-bottom: 0.5em;
+        margin-left: 10.5em;
+        padding-top: 1em;
     }
     #heading-container h1 {
         font-size: 300%;
         
     }
 
-    #menu-container ul li {
-        font-size: 150%;
-    }
-
     .grid {
-        height: 20em;
-        width: 16em;
-        margin-left: 17em;
-        padding-top: 8em;
+        height: 28em;
+        width: 22em;
+        margin-left: 13em;
+        padding-top: 2em;
     }
     .grid img {
-        width: 5em;
-        height: 5em;
+        width: 7em;
+        height: 7em;
     }
     #flag-container {
         width: 100vw;
         height: 84vh;
     }
-    #menu-container {
+    
+
+    .rainbow {
+        
+        margin-left: 160px;
+        margin-right: 40px;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        
+    }
+
+    #restart-container {
+        margin-left: 7.10em;
+    }
+
+    footer a {
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
         position: relative;
-        left: 95px;
+        top: 1em;
+        left: 19.5em;
+    }
+
+    #game-warning {
+        margin: 1em 0 0 8em;;
+        font-size: 100%;
+       
+    }
+
+    #menu-container {
+        display: inline-block;
         float: none;
+        left: 4em;
+        top: 0px;
+        position: relative;
     }
     
   }
@@ -224,12 +259,17 @@ footer a {
         font-size: 200%;
     }
 
+    #header {
+        margin-bottom: 0.5em;
+        margin-left: 2em;
+    }
+
     #menu-container {
         display: inline-block;
         float: none;
+        left: 3.25em;
         top: 0px;
-        left: 0px;
-
+        position: relative;
     }
 
     #menu-container a {
@@ -237,26 +277,51 @@ footer a {
         color: black;
         font-size: 120%;
     }
+
+    .rainbow {
+        margin-left: 3.25em;
+        margin-right: 40px;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        font-size:140%;
+        
+    }
+
+    #restart-container {
+        margin-left: 3.45em;
+    }
+
+    #restart-game {
+        font-size: 100%;
+    }
+
     
     .grid {
-        height: 24em;
-        width: 20em;
+        height: 22em;
+        width: 17.5em;
         margin-left: 4em;
-        margin-top: -10em;
+        padding-top: 0.5em;
     }
     .grid img {
-        width: 6em;
-        height: 6em;
+        width: 5.5em;
+        height: 5.5em;
     }
 
     #flag-container {
         width: 100vw;
+        height: 75vh;
+    }
+
+    #game-warning {
+        margin: 1em 0 0 -4em;;
+        font-size: 80%;
+       
     }
 
     footer a {
         position: relative;
-        top: 0.5em;
-        left: 5em;
+        top: 1em;
+        left: 9em;
     }
   }
 
