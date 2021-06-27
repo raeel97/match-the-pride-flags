@@ -25,7 +25,7 @@ time, mark, audio, video {
 /*Background styling */
 body {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    width: 150vw;
+    width: 99vw;
     background-repeat: no-repeat;
 }
 #heading-container {
@@ -105,6 +105,7 @@ h1 {
 }
 
 #restart-game {
+    background-color: black;
     background-image: linear-gradient(to left, rgb(255, 125, 255), rgb(188, 97, 253), rgb(86, 86, 255), rgb(85, 255, 85), yellow, orange, rgb(255, 68, 68));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
