@@ -34,8 +34,8 @@ Match the pride flags is a simple one level tile matching game with a theme in c
 The Match the pride flags game is simple, there are 6 pairs of pride flags hidden randomly under identical cards. The goal of the game is to match each pair of flags by clicking on two cards at a time. Once all the pairs have been selected, the game is won. 
 
 <h3 id="overview4">How does it work?</h3>
-The game is built and styled using HTML, CSS and Vanilla Javascript. The live site can be viewed [here](https://raeel97.github.io/match-the-pride-flags/). <br>
-The wireframes can be viewed [here](https://drive.google.com/drive/folders/1TptRYKftXfu9MB07vW2qt07NjJUql_nA?usp=sharing).
+The game is built and styled using HTML, CSS and Vanilla Javascript. The live site can be viewed <a href="https://raeel97.github.io/match-the-pride-flags/" target="_blank">here</a> <br>
+The wireframes can be viewed <a href="https://drive.google.com/drive/folders/1TptRYKftXfu9MB07vW2qt07NjJUql_nA?usp=sharing" target="_blank">here</a>.
 
 
 
@@ -137,13 +137,13 @@ Github pages will now deploy the site automatically and update any changes pushe
 <h2 id="credit1">Credits</h2> 
 <h3 id="credit2">Code</h3>
 <ul>
-<li>Most of the code was utilized from lessons given by the Code Institute</li>
-<li>StackOverflow was used when problems were encountered</li>
-<li>W3Schools was used as reference material</li>
+<li>Most of the code was built using a tutorial created by <a href="https://github.com/kubowania" target="_blank">Ania Kubów</a>. The link to the tutorial can be found <a href="https://drive.google.com/file/d/1bq5xbM3hVl5W9sZCwPgNd9v6XdRT6WoO/view?usp=sharing"  target="_blank">here</a>.
+ </li>
+<li>StackOverflow, The Code Institute tutor team and W3Schools were used when problems were encountered</li>
 </ul>
 <h3 id="credit3">Media</h3>
-Credits for all images and text content can be found 
-<a href="https://drive.google.com/file/d/1bq5xbM3hVl5W9sZCwPgNd9v6XdRT6WoO/view?usp=sharing">here</a>.
+Credits for all the flag images can be given to wikipedia. 
+The back side of the tiles was created using Canva. 
 <br><br>
 <h3 id="credit4">Acknowledgments</h3>
-I would like to thank my mentor, my student advisor, the slack community and all tutor and support staff at Code Institute for their guidance and assistance in the making of this project. 
+I would like to thank my mentor, Chris Quinn, and my student advisor, Kasia Bogucka, as well at Jack at the Code Institutes tutor team for their patience and support, without it, I would have given up ages ago! <br><br>I would further like to thank The Code Institute as well as the slack community. I would also like to thank Ania Kubów for the awesome tutorial. 
