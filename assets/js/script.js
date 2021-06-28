@@ -58,7 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < cardList.length; i++) {
             const card = document.createElement('img');
             card.setAttribute('src', './assets/images/blank.png');
-            card.setAttribute('class', 'cards');
+            card.setAttribute('class', 'cards')
+			card.setAttribute('alt', 'tile that can be flipped over');
             card.setAttribute('data-id', i);
             card.addEventListener('click', flipCard);
             grid.appendChild(card);
