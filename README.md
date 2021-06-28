@@ -25,18 +25,18 @@
 
 <h3 id="overview2"> What is this website for?</h3>
 
-Raise your flag is a website that aims to explore different pride flags and their meanings. This site will be targeted towards anyone who is eager to learn about the different pride flags.
+Match the pride flags is a simple one level tile matching game with theme in celebration of pride month. 
 
 ![Wesbite screenshots](assets/images/responsive-screenshot.JPG )
 
 <h3 id="overview3"> What does it do?</h3>
 
-Raise your flag has an informational page that displays all the current pride flags, each image is clickable and will display a widget of information relating to the pride flag when clicked. There is also a interactive memory tile game. 
+The Match the pride flags game is simple, there are 6 pairs of pride flags hidden randomly under identical cards. The goal of the game is to match each pair of flags by clicking on two cards at a time. Once all the pairs have been selected, the game is won. 
 
 <h3 id="overview4">How does it work?</h3>
 
-Raise your flag was created with HTML5, Javascript and styled with CSS3. There are 3 pages in total that are navigated using the menu located at the top of the website on the right side of the viewport. The tiles were created using HTML and CSS and the memory tile game was built using a combination of all three of the previously mentioned technologies. This project was developed on Gitpod and deployed on Github. The site can be viewed [here](https://raeel97.github.io/life-in-mzansi/). <br>
-The wireframes can be viewed [here](https://drive.google.com/drive/folders/10ZFwIOE_hdAEvLItfB3IiwfM7PaafriX?usp=sharing).
+The game is built and styled using HTML, CSS and Vanilla JaThe site can be viewed [here](https://raeel97.github.io/match-the-pride-flags/). <br>
+The wireframes can be viewed [here](https://drive.google.com/drive/folders/1TptRYKftXfu9MB07vW2qt07NjJUql_nA?usp=sharing).
 
 
 
