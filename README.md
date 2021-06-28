@@ -25,9 +25,9 @@
 
 <h3 id="overview2"> What is this website for?</h3>
 
-Match the pride flags is a simple one level tile matching game with theme in celebration of pride month. 
+Match the pride flags is a simple one level tile matching game with a theme in celebration of pride month. 
 
-![Wesbite screenshots](assets/images/responsive-screenshot.JPG )
+![Wesbite screenshots](assets/images/game-snip.JPG )
 
 <h3 id="overview3"> What does it do?</h3>
 
@@ -53,7 +53,10 @@ The wireframes can be viewed [here](https://drive.google.com/drive/folders/1TptR
 <h3 id="features3">Features Left to Implement</h3>
 <ul>
 <li>A new homepage will be added with 10 tiles displaying each of the major flags that can be flipped over to reveal information about each flag </li>
+<li>Audio that reacts when users make a match, win, a mismatch and click on the same tile</li>
 <li>A feedback and contact form will be added so that users are able to input suggestions</li>
+<li>A audio mute button</li>
+<li>3 levels of difficulty</li>
 </ul>
 <br>
 <h2 id="tech">Technologies Used</h2>
@@ -97,6 +100,7 @@ Mobile lighthouse report
 
 
 <h3 id="test3">Validator Testing</h3>
+
 - HTML was validated using [W3C Validator](https://validator.w3.org/)
 
  HTML Validator report
@@ -105,6 +109,11 @@ Mobile lighthouse report
 
  CSS Validator report
   ![Alt text](assets/images/css-validation.JPG)
+
+  - Javascript was validated using [JS Hint](https://jshint.com/)
+
+ JS Hint report
+  ![Alt text](assets/images/js-validation.JPG)
 
 <h2 id="deployment">Deployment</h2>
 
