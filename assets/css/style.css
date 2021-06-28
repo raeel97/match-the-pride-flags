@@ -27,14 +27,16 @@ time, mark, audio, video {
 /* Memory Game Title Styling */
 
 /* Header styling */
+
+#heading {
+    margin-bottom: 5vh;
+}
 .rainbow {
     background-image: linear-gradient(to left, rgb(255, 83, 255), rgb(132, 0, 226), rgb(37, 37, 247), rgb(8, 240, 8), yellow, orange, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 25vw;
-    margin-right: 25vw;
-    padding-top: 2vh;
-    padding-bottom: 5vh;
+    margin: 0 auto;
+    width: fit-content;
     font-size: 800%;
     
 }
@@ -48,42 +50,38 @@ time, mark, audio, video {
 
 #restart-container {
     width: fit-content;
-    margin-left: 745px;
-    font-size: 50px;
-    position: relative;
-    top: 10;
-    bottom: 10px;
+    margin: 0 auto;
+    font-size: 5vw;
+    margin-bottom: 5vh;
 }
 /* Memory Card Game Styling */
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 360px;
-    width: 490px;
-    margin-left: 33em;
+    height: 30vw;
+    width: 40.9vw;
+    margin: 0 auto;
     
     
 }
 
 .grid img {
     border: black 1px solid;
-    width: 120px;
-    height: 120px;
+    height: 10vw;
+    width: 10vw;
     border-radius: 10%;
 
 }
 
 #game-warning {
-    margin: 1em 55em 0 22em;
+    margin: 0 auto;
     background-image: linear-gradient(to left, rgb(255, 125, 255), rgb(188, 97, 253), rgb(86, 86, 255), rgb(85, 255, 85), yellow, orange, rgb(255, 68, 68));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 150%;
-    width: 490px;
-    display: block;
-    height: 25px;
+    font-size: 2.5vw;
     text-align: center;
+    
 }
 
 
