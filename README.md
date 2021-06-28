@@ -1,4 +1,4 @@
-# 🏳️‍🌈Raise your flag🏳️‍🌈
+# Match the pride flags
 
 
 
@@ -34,8 +34,7 @@ Match the pride flags is a simple one level tile matching game with theme in cel
 The Match the pride flags game is simple, there are 6 pairs of pride flags hidden randomly under identical cards. The goal of the game is to match each pair of flags by clicking on two cards at a time. Once all the pairs have been selected, the game is won. 
 
 <h3 id="overview4">How does it work?</h3>
-
-The game is built and styled using HTML, CSS and Vanilla JaThe site can be viewed [here](https://raeel97.github.io/match-the-pride-flags/). <br>
+The game is built and styled using HTML, CSS and Vanilla Javascript. The live site can be viewed [here](https://raeel97.github.io/match-the-pride-flags/). <br>
 The wireframes can be viewed [here](https://drive.google.com/drive/folders/1TptRYKftXfu9MB07vW2qt07NjJUql_nA?usp=sharing).
 
 
@@ -45,15 +44,15 @@ The wireframes can be viewed [here](https://drive.google.com/drive/folders/1TptR
 <h3 id="features2">Existing Features</h3>
 
 <ol>
-<li>A pride themed front page that ties in with the theme of the website</li>
-<li>A logo that links to the home page. The logo displays pride flags on either side of the text</li>
-<li>A horizontally centered menu is used to navigate the website and a hamburger drop menu is avaidable on mobile and tablet. Each menu button underlines when selected.</li>
-<li>There is a link to the developers github profile.</li> 
+<li>A rainbow themed header.</li> 
+<li>6 pairs of tiles that can be flipped over to reveal a pride flag underneath</li>
+<li>A rainbow shuffle icon that acts a shuffler for the tiles by refreshing the page </li>
+<li>A game alert system that informs users when they make a match between tiles or when they make a mistake</li>
 </ol>
 <br>
 <h3 id="features3">Features Left to Implement</h3>
 <ul>
-<li>A quiz game will later be added to test the users knowledge on the various pride flags </li>
+<li>A new homepage will be added with 10 tiles displaying each of the major flags that can be flipped over to reveal information about each flag </li>
 <li>A feedback and contact form will be added so that users are able to input suggestions</li>
 </ul>
 <br>
@@ -69,7 +68,6 @@ The wireframes can be viewed [here](https://drive.google.com/drive/folders/1TptR
 <h3 id="tech2">Frameworks Libraries and Programmes Used</h3> 
 <ul>
 <li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a> - used for icons.</li>
-<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> - to import the font-family used in the website: Lato.</li>
 <li><a href="https://github.com/" target="_blank">GitHub</a> - used to host repository.</li>
 <li><a href="https://www.gitpod.io/" target="_blank">GitPod</a> - used to develop project and organise version control.</li>
 <li><a href="https://pages.github.com/" target="_blank">GitHub Pages</a> - used to deploy the site.</li>
