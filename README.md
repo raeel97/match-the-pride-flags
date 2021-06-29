@@ -1,4 +1,4 @@
-# Match the pride flags
+<h1 style="background-image: linear-gradient(to left, rgb(255, 83, 255), rgb(132, 0, 226), rgb(37, 37, 247), rgb(8, 240, 8), yellow, orange, red); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0 auto; width: fit-content; font-size: 800%;font-size: 7vw;">Match The Pride Flags</h1>
 
 
 
