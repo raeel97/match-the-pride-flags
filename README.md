@@ -94,7 +94,7 @@ Mobile lighthouse report
 - Site viewed and tested in the following browsers:
   - Google Chrome
   - Microsoft Edge
-  - Mozilla Firefox
+  - Mozilla Firefox 
 
  
 
@@ -114,6 +114,12 @@ Mobile lighthouse report
 
  JS Hint report
   ![Alt text](assets/images/js-validation.JPG)
+
+  <h3 id="test3">Bugs</h3>
+
+  - Restart button and heading veer off to the left in Firefox
+  - Game warning is displayed early to too quickly when users click on the tiles quickly
+  - Tile doesn't flip over when a mismatch occurs if the user clicks on a third tile in a fast manner
 
 <h2 id="deployment">Deployment</h2>
 
