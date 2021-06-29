@@ -86,10 +86,10 @@ The wireframes can be viewed <a href="https://drive.google.com/drive/folders/1Tp
 - Code was written using Gitpod and tested using Chrome Devtools Lighthouse: <br><br>
 
 Mobile lighthouse report
- ![Alt text](assets/images/mobile-lighthouse-report.JPG)
+ ![Alt text](assets/images/lighthouse-mobile.JPG)
 
  Desktop lighthouse report
-  ![Alt text](assets/images/desktop-lighthouse-report.JPG)
+  ![Alt text](assets/images/lighthouse-desktop.JPG)
 - All code used on the site has been tested to ensure everything is working as expected
 - Site viewed and tested in the following browsers:
   - Google Chrome
